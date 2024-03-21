@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerador de Senha</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
@@ -24,19 +24,19 @@
 
             <label>
                 <span>Comprimento da Senha:</span>
-                <input type="number" name="" id="password-length" />
+                <input type="number" id="password-length" min="1" max="32" value="8" />
             </label>
-
-            <label>
-                <span>Incluir Letras Maiúsculas:</span>
-                <input type="checkbox" id="include-uppercase" value="16" />
-            </label>
-
+            
             <label>
                 <span>Incluir Letras Minúsculas:</span>
                 <input type="checkbox" id="include-lowercase" checked />
             </label>
-
+            
+            <label>
+            <span>Incluir Letras Maiúsculas:</span>
+                <input type="checkbox" id="include-uppercase" checked />
+            </label>
+            
             <label>
                 <span>Incluir Números:</span>
                 <input type="checkbox" id="include-numbers" checked />
