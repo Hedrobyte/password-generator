@@ -34,6 +34,7 @@ main {
 h1 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 /* Estilos de Inputs e Botões */
@@ -83,8 +84,13 @@ input[type="checkbox"] {
 .password-wrap button {
 	cursor: pointer;
 	background: linear-gradient(to bottom, #ad25fc 0%, #518cd4 75%);
-	-webkit-background-clip: text;
+	background-clip: text;
 	-webkit-text-fill-color: transparent;
+}
+
+#password {
+    width: 100%;
+    text-align: center; 
 }
 
 /* Label */
@@ -120,4 +126,9 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
 	background-position: 75%;
+}
+
+#generate-password {
+    display: block;
+    margin: 0 auto; 
 }
